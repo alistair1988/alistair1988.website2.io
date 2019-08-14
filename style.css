@@ -1,0 +1,110 @@
+
+body{
+    margin: 0;
+}
+
+.zone{
+    display: flex;
+}
+
+.nav{  
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    width: 100%;
+    
+}
+
+.nav-link-group{
+    display: flex;
+    list-style-type: none;
+
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: .5px;
+    border-style: solid;
+    border-radius: 10%;
+    
+}
+
+.push{
+    margin-left: auto;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/aerial-shot-bird-s-eye-view-blue-1295036-wide.png");
+    background-size: cover;
+}
+
+.overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    align-content: stretch ;
+    justify-content: space-evenly;
+
+}
+
+.text-container{
+
+}
+
+
+.text{
+
+
+
+}
+
+.overview-image{
+    background-color: black;
+    background-image: url("assets/camera-lens-medium.jpg");
+    
+    background-size: cover;
+    /* width: 100%; */
+    
+}
+
+
+.overview-para{
+  
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+    
+    align-content: ;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    
+}
+
+.project-title1{
+    
+}
+
+.proj-img{
+    grid-row-start: 2;
+
+    
+    
+}
+
+.proj-img>img{
+    width: 200px;
+}
