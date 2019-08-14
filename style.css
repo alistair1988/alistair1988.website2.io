@@ -6,19 +6,21 @@ body{
 .zone{
     display: flex;
 }
+div.sticky{
+    position: sticky;
+    top: 0;
+}
 
 .nav{  
     position: absolute;
     background-color:rgba(0, 0, 0, 0);
     color: white;
     width: 100%;
-    
 }
 
 .nav-link-group{
     display: flex;
     list-style-type: none;
-
     width: 100%;
     height: auto;
     margin-top: 25px;
@@ -32,7 +34,6 @@ body{
     border: .5px;
     border-style: solid;
     border-radius: 10%;
-    
 }
 
 .push{
@@ -42,34 +43,101 @@ body{
 .header{
     width: 100%;
     height: 100vh;
-    background-image: url("assets/aerial-shot-bird-s-eye-view-blue-1295036-wide.png");
+    background-image: url("assets/Alistair Coombe.png");
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>h2{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+    margin-left: 52%;
+    margin-top: 20%;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.principles-gridcontainer{
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 100px 100px 100px; */
+    align-content: top;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+
+}
+
+.principles-heading{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-left: auto;
+ 
+}
+
+.principles-gridcontainer>img{
+    width: 200px;
+
+    margin: 30px 0px 0px 150px;
+    grid-row-start: 3;
+    image-resolution: 300px;
+}
+
+.principles-gridcontainer>p{
+    grid-row-start: 4;
+    text-align: left;
+    width: 200px;
+    margin: 10px 0px 20px 150px;
+}
+
+.principle{
+    grid-row-start: 2;
+    text-align: center;
+    /* margin-left: auto; */
 }
 
 .overview{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 0;
     height: 100vh;
     align-content: stretch ;
     justify-content: space-evenly;
+    border: .02px;
+    border-style: hidden;
+    border-color: rgb(117, 111, 111);
 
 }
 
-.text-container{
+.overview-title{
+}
 
+.text-container{
+color: whitesmoke;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:rgba(0, 0, 0, 0.7); 
+padding: 20px;
 }
 
 
 .text{
+    text-align: right;
+    
 
 
 
 }
 
 .overview-image{
-    background-color: black;
-    background-image: url("assets/camera-lens-medium.jpg");
+    background-color: rgba(210,210,210,1);
+    background-image: url("assets/alley-architecture-buildings-211910-crop6.png");
     
     background-size: cover;
     /* width: 100%; */
@@ -83,14 +151,12 @@ body{
 
 .projects{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto; */
     grid-gap: 10px;
-    
-    align-content: ;
     justify-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 70vh;
     
 }
 
@@ -106,5 +172,18 @@ body{
 }
 
 .proj-img>img{
-    width: 200px;
+  max-width: 200px;
 }
+
+.footer{
+    display: flex;
+    position: relative;
+  margin-left: 80%;
+  background-color: azure
+
+
+ 
+
+    
+}
+
